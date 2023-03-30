@@ -17,6 +17,8 @@ exports.createPages = async ({ actions }) => {
   })
 }
 
+const path = require("path")
+
 exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
   const output = getConfig().output || {}
 
